@@ -6,62 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Know</title>
 
-  <style>
-    body {
-      background: #f7f8f8;
-      color: #012242;
-      text-align: center;
-    }
-
-    button {
-      color: #0098fd;
-      border: none;
-      font-weight: 700;
-      background: none;
-    }
-
-    button.fat {
-      color: #ffffff;
-      background: #0098fd;
-    }
-
-    #footer a {
-      color: #012242;
-      text-decoration: none;
-    }
-
-    .hide {
-      display: none;
-    }
-  </style>
-
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <img src="./img/to-know.svg" alt="logo To Know">
+  <div id="container">
 
-  <p>We will catalog <strong> ideas from where to acquire knowledge
-    </strong> of a particular subject or theme.</p>
+    <section id="intro">
+      <header>
+        <img src="./img/to-know.svg" alt="logo To Know">
+      </header>
+      <main>
+        <p>We will catalog <strong> ideas from where to acquire knowledge
+          </strong> of a particular subject or theme.</p>
 
-  <p>Start by clicking on see ideas to see registered suggestions,
-    and you can also contribute by registering your idea.</p>
+        <p>Start by clicking on see ideas to see registered suggestions,
+          and you can also contribute by registering your idea.</p>
+      </main>
+      <section id="buttons">
+        <button> + Add Idea </button>
+        <button class="fat"> See Ideas </button>
+      </section>
+      <footer id="footer"> By 👩🏻‍💻 <a href="https://github.com/alinecbsr"> Aline </a></footer>
+    </section>
 
-  <button> + Add Idea </button>
-  <button class="fat"> See Ideas </button>
+    <section id="last-ideas">
+      <div class="idea">
+        <img src="./img/javascript.svg" alt="logo JavaScript">
 
-  <p id="footer"> By 👩🏻‍💻 <a href="https://github.com/alinecbsr"> Aline </a></p>
+        <div class="content">
+          <h3>JavaScript</h3>
+          <p>Front-end</p>
+          <div class="description">
+            An excellent introductory course on JavaScript and how to learn to program with the language.
+            All free and through videos on youtube, with an excellent teacher.
+          </div>
+          <a href="#">Go to idea</a>
+        </div>
+      </div>
 
-  <script>
-    document
-      .querySelector("button.fat")
-      .addEventListener("click", function () {
-        document
-          .querySelector("#footer")
-          .classList
-          .toggle("hide")
-      })
-  </script>
+      <div class="idea">
+        <img src="./img/react.svg" alt="logo React">
+
+        <div class="content">
+          <h3>React</h3>
+          <p>Front-end</p>
+          <div class="description">
+            Learn the incredible ReactJS framework, which allows you to develop dynamic interfaces for the
+            web with performance and componentization, using the most modern concepts of front-end development.
+            Free and excellent quality course.
+          </div>
+          <a href="https://rocketseat.com.br/starter/curso-gratuito-reactjs">Go to idea</a>
+        </div>
+      </div>
+
+      <div class="idea">
+        <img src="./img/nodejs.svg" alt="logo NodeJS">
+
+        <div class="content">
+          <h3>NodeJS</h3>
+          <p>Back-end</p>
+          <div class="description">
+            Learn how to program with Node.js which is an asynchronous JavaScript interpreter with open source
+            event-oriented,
+            focused on migrating the client's JavaScript programming (frontend) to the servers,
+            creating highly scalable applications, handling thousands of simultaneous connections / events
+            in real time on a single physical machine. Excellent free course with excellent teacher.
+          </div>
+          <a href="https://cursos.erickwendel.com/courses/">Go to idea</a>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="./script.js"></script>
+
 </body>
 
 </html>
