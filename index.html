@@ -5,20 +5,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Know</title>
+
+  <style>
+    
+    body {
+      background: #f7f8f8;
+      color: #012242;
+      text-align: center;
+    }
+
+    button {
+      color: #0098fd;
+      border: none;
+      font-weight: 700;
+      background: none;
+    }
+
+    button.fat {
+      color: #ffffff;
+      background: #0098fd;
+    }
+
+    #footer a {
+      color: #012242;
+      text-decoration: none;
+    }
+
+    .hide {
+      display: none;
+    }
+
+  </style>
+
+
 </head>
 
 <body>
-  <img src="./img/to-know.png" alt="logo To Know">
+  <img src="./img/to-know.svg" alt="logo To Know">
 
   <p>We will catalog <strong> ideas from where to acquire knowledge
     </strong> of a particular subject or theme.</p>
+
   <p>Start by clicking on see ideas to see registered suggestions,
     and you can also contribute by registering your idea.</p>
 
   <button> + Add Idea </button>
-  <button> See Ideas </button>
+  <button class="fat"> See Ideas </button>
 
-  <p> By 👩🏻‍💻 Aline  </p>
+  <p id="footer"> By 👩🏻‍💻 <a href="https://github.com/alinecbsr"> Aline </a></p>
+
+  <script>
+    document
+      .querySelector("button.fat")
+      .addEventListener("click", function(){
+        document
+          .querySelector("#footer")
+            .classList
+            .toggle("hide")
+
+      })
+  </script>
 </body>
 
 </html>
