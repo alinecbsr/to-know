@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Know</title>
-
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
 
     <section id="intro">
       <header>
-        <img src="./img/to-know.svg" alt="logo To Know">
+        <img class="logo" src="./img/to-know.svg" alt="logo To Know">
       </header>
       <main>
         <p>We will catalog <strong> ideas from where to acquire knowledge
@@ -24,10 +24,10 @@
           and you can also contribute by registering your idea.</p>
       </main>
       <section id="buttons">
-        <button> + Add Idea </button>
+        <button onclick="onOff()"> + Add Idea </button>
         <button class="fat"> See Ideas </button>
       </section>
-      <footer id="footer"> By 👩🏻‍💻 <a href="https://github.com/alinecbsr"> Aline </a></footer>
+      <footer id="footer"> By 👩🏻‍💻 <a href="https://github.com/alinecbsr" target="_blank"> Aline </a></footer>
     </section>
 
     <section id="last-ideas">
@@ -61,7 +61,7 @@
       </div>
 
       <div class="idea">
-        <img src="./img/nodejs.svg" alt="logo NodeJS">
+        <img src="./img/node.svg" alt="logo NodeJS">
 
         <div class="content">
           <h3>NodeJS</h3>
@@ -79,6 +79,45 @@
 
     </section>
 
+  </div>
+
+  <!-- Modal -->
+
+  <div id="modal" class="hide">
+    <div class="content">
+      <h1>New Idea</h1>
+      <form action="">
+
+        <div class="input-wrapper">
+          <label for="title">Idea title</label>
+          <input type="text" name="title">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="category">Idea category</label>
+          <input type="text" name="category">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="image">Image link</label>
+          <input type="url" name="image">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="description">Enter a description for this idea</label>
+          <textarea name="description" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="link">Idea link</label>
+          <input type="url" name="link">
+        </div>
+
+        <a href="#" onclick="onOff()">Voltar</a>
+        <button>To save</button>
+
+      </form>
+    </div>
   </div>
 
   <script src="./script.js"></script>
