@@ -4,33 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Know</title>
+  <title>Ideas To Know</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div id="container">
+<body id="page-ideas">
+  <div id="container">  
+  <header>
+    <a href="index.html">
+      <img src="./img/to-know.svg" alt="logo To Know">
+    </a>
+      <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="button" href="#" onclick="onOff()">New Idea</a></li>
+      </nav>
+  </header>
 
-    <section id="intro">
-      <header>
-        <img class="logo" src="./img/to-know.svg" alt="logo To Know">
-      </header>
-      <main>
-        <p>We will catalog <strong> ideas from where to acquire knowledge
-          </strong> of a particular subject or theme.</p>
+  <section id="title">
+    <div class="t1">On display</div>
+    <div class="t2">Ideas</div>
+  </section>
 
-        <p>Start by clicking on see ideas to see registered suggestions,
-          and you can also contribute by registering your idea.</p>
-      </main>
-      <section id="buttons">
-        <button onclick="onOff()" > + Add Idea </button>
-        <a href="ideas.html" class="button"> See Ideas </a>
-      </section>
-      <footer id="footer"> By 👩🏻‍💻 <a href="https://github.com/alinecbsr" target="_blank"> Aline </a></footer>
-    </section>
-
-    <section id="last-ideas">
+  <main>
+    <section id="ideas">
       <div class="idea">
         <img src="./img/javascript.svg" alt="logo JavaScript">
 
@@ -41,7 +38,7 @@
             An excellent introductory course on JavaScript and how to learn to program with the language.
             All free and through videos on youtube, with an excellent teacher.
           </div>
-          <a href="#">Go to idea</a>
+          <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank">Go to idea</a>
         </div>
       </div>
 
@@ -56,7 +53,7 @@
             web with performance and componentization, using the most modern concepts of front-end development.
             Free and excellent quality course.
           </div>
-          <a href="https://rocketseat.com.br/starter/curso-gratuito-reactjs">Go to idea</a>
+          <a href="https://rocketseat.com.br/starter/curso-gratuito-reactjs" target="_blank">Go to idea</a>
         </div>
       </div>
 
@@ -73,27 +70,28 @@
             creating highly scalable applications, handling thousands of simultaneous connections / events
             in real time on a single physical machine. Excellent free course with excellent teacher.
           </div>
-          <a href="https://cursos.erickwendel.com/courses/">Go to idea</a>
+          <a href="https://cursos.erickwendel.com/courses/" target="_blank">Go to idea</a>
         </div>
       </div>
 
-      <div class="idea">
-        <img src="./img/css.svg" alt="logo CSS 3">
-        <div class="content">
-          <h3>CSS</h3>
-          <p>Front-end</p>
-          <div class="description">
-            An excellent website where you can find diverse and high quality content covers CSS and more. It is worth checking!
-          </div>
-          <a href="https://css-tricks.com/">Go to idea</a>
+    <div class="idea">
+      <img src="./img/css.svg" alt="logo CSS 3">
+      <div class="content">
+        <h3>CSS</h3>
+        <p>Front-end</p>
+        <div class="description">
+          An excellent website where you can find diverse and high quality content covers CSS and more. It is worth checking!
         </div>
+        <a href="https://css-tricks.com/" target="_blank">Go to idea</a>
       </div>
+    </div>
 
     </section>
+  </main>
 
-  </div>
-
-  <!-- Modal -->
+  <footer>
+    By 👩🏻‍💻 <a href="https://github.com/alinecbsr" target="_blank"> Aline </a>
+  </footer>
 
   <div id="modal" class="hide">
     <div class="content">
@@ -133,7 +131,7 @@
   </div>
 
   <script src="./script.js"></script>
-
+</div>
 </body>
 
 </html>
